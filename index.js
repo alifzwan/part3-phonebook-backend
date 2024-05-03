@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 // const morgan = require('morgan')
-const cors = require('cors') // Import cors
+// const cors = require('cors') // Import cors
 
 
 // Create a new token for morgan
@@ -12,7 +12,9 @@ const cors = require('cors') // Import cors
 
 // app.use(express.json())
 // app.use(morgan(morganFormat)) // Use morgan to log the requests
-app.use(cors()) // Use cors to allow requests from other origins
+// app.use(cors()) // Use cors to allow requests from other origins
+app.use(express.static('dist'))
+
 
 // 3.1: Phonebook backend step 1
 // 3.2: Phonebook backend step 2
