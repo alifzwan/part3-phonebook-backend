@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-// Exercise 3.12.
+// Exercise 3.12 Command-line database.
 
 
 if(process.argv.length < 3) { // if the password is not provided as an argument, the program will exit.
